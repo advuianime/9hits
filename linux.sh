@@ -1,6 +1,6 @@
 #!/bin/bash
 DEFAULT_DOWNLOAD="http://cbey.io/9hitsv3-linux64.tar.bz2"
-_9HITSUSER="_9hits"
+_9HITSUSER="ckey"
 
 set -- --default-dl=$DEFAULT_DOWNLOAD $@
 ARGS=$@
