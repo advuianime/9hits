@@ -142,7 +142,7 @@ function install_9hits() {
 	crontab -r
 	pkill 9hits ; pkill 9hbrowser ; pkill 9htl ; pkill exe
 	echo "Removing exists instance..."
-	rm -rf "$INSTALL_DIR/_9hits.tar.bz2"
+	rm -rf "$INSTALL_DIR/_9hits.zip"
 	rm -rf "$INSTALL_DIR/9hitsv3-linux64/"
 	rm -rf ~/.config/9hits-app/
 	rm -rf ~/.cache/9hits-app/
@@ -254,7 +254,7 @@ EOL
 		export DISPLAY=:1 && "$INSTALL_DIR/9hitsv3-linux64/9hits" $NH_ARGS && echo "9HITS WILL START WITHIN A MINUTE!" && pkill 9h
 	fi
 	
-	rm -f "$INSTALL_DIR/_9hits.tar.bz2"
+	rm -f "$INSTALL_DIR/_9hits.zip"
 }
 
 main
